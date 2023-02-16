@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {{data}}
+    </body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>age</th>
+            <th>purchased_item</th>
+            <th>amount</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.purchased}}</td>
+            <td>{{i.amount}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</html>
